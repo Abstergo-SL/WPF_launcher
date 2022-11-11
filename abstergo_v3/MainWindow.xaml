@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="1250" WindowStartupLocation="CenterScreen">
     <Window.Background>
-        <ImageBrush ImageSource="img/Screenshot_1_upscayl_4x_realesrgan-x4plus.png"/>
+        <ImageBrush ImageSource="Screenshot_1_upscayl_4x_realesrgan-x4plus.png"/>
     </Window.Background>
     
     <Grid>
@@ -108,15 +108,50 @@
 
 
             <Grid Grid.Column="1" Grid.Row="2" >
-                <Label Content="Volumen general" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  />
+                <Label Content="Volumn musica" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  />
             </Grid>
             <Grid Grid.Column="2" Grid.Row="2" >
                 <Slider  VerticalAlignment="Center" BorderBrush="Black" Foreground="Black" Background="Black" Opacity="0.8"/>
             </Grid>
 
-
-
+            <Grid Grid.Column="1" Grid.Row="3" >
+                <Label Content="Limite fps" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  />
             </Grid>
+            <Grid Grid.Column="2" Grid.Row="3" >
+                <ComboBox  VerticalAlignment="Center" BorderBrush="White" Foreground="Black" Background="White" Opacity="0.8">
+                    <ComboBoxItem IsSelected="True">144</ComboBoxItem>
+                    <ComboBoxItem>60</ComboBoxItem>
+                    <ComboBoxItem>30</ComboBoxItem>
+                </ComboBox>
+                
+            </Grid>
+
+            <Grid Grid.Column="1" Grid.Row="4" >
+                <Label Content="modo chetao" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  />
+            </Grid>
+            <Grid Grid.Column="2" Grid.Row="4" >
+                <Button Content="guardar" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/> 
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Grid Grid.Column="2" Grid.Row="7" >
+                <Button Content="uwu" VerticalAlignment=" Center"  FontWeight="Bold" Click="Button_guardar"/>
+            </Grid>
+
+        </Grid>
 
 
         

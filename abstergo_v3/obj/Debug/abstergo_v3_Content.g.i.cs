@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("abstergologo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("git-merge.wmv")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/git-merge.wmv")]
 
 

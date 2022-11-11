@@ -12,3 +12,4 @@ C:\Users\admin-dam2b\Desktop\ab_v3\abstergo_v3\abstergo_v3\obj\Debug\abstergo_v3
 C:\Users\admin-dam2b\Desktop\ab_v3\abstergo_v3\abstergo_v3\obj\Debug\abstergo_v3.csproj.CoreCompileInputs.cache
 C:\Users\admin-dam2b\Desktop\ab_v3\abstergo_v3\abstergo_v3\obj\Debug\abstergo_v3.exe
 C:\Users\admin-dam2b\Desktop\ab_v3\abstergo_v3\abstergo_v3\obj\Debug\abstergo_v3.pdb
+C:\Users\admin-dam2b\Desktop\ab_v3\abstergo_v3\abstergo_v3\obj\Debug\abstergo_v3_Content.g.cs

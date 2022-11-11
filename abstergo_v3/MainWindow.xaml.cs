@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -19,6 +20,14 @@ namespace abstergo_v3
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int general_vol = 50;
+        private int musica_vol = 50;
+        private int fps = 30;
+        private Boolean modocheto = false;
+
+
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,6 +39,18 @@ namespace abstergo_v3
             caja_secion.Visibility = Visibility.Hidden;
         }
 
+        private void Button_guardar(object sender, RoutedEventArgs e)
+        {
+            StreamWriter sr = File.CreateText("settings");
 
+            sr.WriteLine("Volume:" + general_vol + ","); //Inventate la estructura pero que
+            sr.WriteLine("cosa:" + musica_vol + ","); // facilmente los datos
+            sr.WriteLine("FPS:" + fps + ","); // sea estructurado para luego recoger
+            sr.WriteLine("FPS:" + modocheto + ","); // sea estructurado para luego recoger
+
+            sr.Close();
+
+
+        }
     }
 }

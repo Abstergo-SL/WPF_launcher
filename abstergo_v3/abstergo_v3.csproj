@@ -91,7 +91,6 @@
   <ItemGroup>
     <Resource Include="abstergologo.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="img\Screenshot_1_upscayl_4x_realesrgan-x4plus.png" />
   </ItemGroup>
@@ -103,6 +102,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\abstergologo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="git-merge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="git-merge.wmv" />
+    <Content Include="img\git-merge.wmv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
