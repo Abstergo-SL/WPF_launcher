@@ -33,13 +33,7 @@ namespace abstergo_v3
             InitializeComponent();
         }
 
-        private void opciones_Click(object sender, RoutedEventArgs e)
-        {
-            caja_opciones.Visibility = Visibility.Visible;
-            caja_secion.Visibility = Visibility.Hidden;
-        }
-
-        private void Button_guardar(object sender, RoutedEventArgs e)
+        public void generar_formulario_opciones()
         {
             StreamWriter sr = File.CreateText("settings");
 
@@ -49,8 +43,51 @@ namespace abstergo_v3
             sr.WriteLine("FPS:" + modocheto + ","); // sea estructurado para luego recoger
 
             sr.Close();
+        }
+        public void cerrar_opciones()
+        {
+            caja_opciones.Visibility = Visibility.Hidden;
+            caja_secion.Visibility = Visibility.Visible;
+        }
+        public void abrir_opciones()
+        {
+            caja_opciones.Visibility = Visibility.Visible;
+            caja_secion.Visibility = Visibility.Hidden;
+        }
 
 
+        private void opciones_Click(object sender, RoutedEventArgs e)
+        {
+            abrir_opciones();
+        }
+
+        private void Button_guardar(object sender, RoutedEventArgs e)
+        {
+            generar_formulario_opciones();
+
+            cerrar_opciones();
+        }
+
+
+        private void Button_restablecer(object sender, RoutedEventArgs e)
+        {
+         general_vol = 50;
+         musica_vol = 50;
+         fps = 30;
+         modocheto = false;
+
+            generar_formulario_opciones();
+
+            cerrar_opciones();
+        }
+
+        private void Button_mode_desaroyo(object sender, RoutedEventArgs e)
+        {
+            modocheto = true;
+
+            generar_formulario_opciones();
+
+            cerrar_opciones();
         }
     }
 }

@@ -9,7 +9,7 @@
     <Window.Background>
         <ImageBrush ImageSource="Screenshot_1_upscayl_4x_realesrgan-x4plus.png"/>
     </Window.Background>
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.3*"/>
@@ -27,7 +27,7 @@
             <RowDefinition Height="0.6*"/>
         </Grid.RowDefinitions>
 
-        
+
 
         <Grid Grid.Column="3" Grid.Row="2"  x:Name="caja_secion" Visibility="Visible">
             <StackPanel Grid.Row="2" Grid.Column="3">
@@ -123,39 +123,30 @@
                     <ComboBoxItem>60</ComboBoxItem>
                     <ComboBoxItem>30</ComboBoxItem>
                 </ComboBox>
-                
+
             </Grid>
 
             <Grid Grid.Column="1" Grid.Row="4" >
-                <Label Content="modo chetao" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  />
+                <Label Content="modo desarroyador" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"  />
             </Grid>
             <Grid Grid.Column="2" Grid.Row="4" >
-                <Button Content="guardar" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/> 
+                <Button Content="   upgrade   " VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Click="Button_mode_desaroyo"/>
             </Grid>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <Grid Grid.Column="1" Grid.Row="7" >
+                <Button Content="restablecer" VerticalAlignment=" Center"  FontWeight="Bold" Click="Button_restablecer" Margin="0,18.5,54.667,18.5"/>
+            </Grid>
 
             <Grid Grid.Column="2" Grid.Row="7" >
-                <Button Content="uwu" VerticalAlignment=" Center"  FontWeight="Bold" Click="Button_guardar"/>
+                <Button Content="guardar" VerticalAlignment=" Center"   FontWeight="Bold" Click="Button_guardar" Margin="34,18.5,0,18.5"/>
             </Grid>
 
         </Grid>
 
 
-        
-            <StackPanel Grid.Row="0" Grid.Column="0">
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
             <StackPanel.Background>
                 <ImageBrush ImageSource="img/abstergologo.png" Stretch="UniformToFill" TileMode="Tile"/>
             </StackPanel.Background>
