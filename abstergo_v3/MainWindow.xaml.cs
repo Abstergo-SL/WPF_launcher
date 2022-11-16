@@ -96,5 +96,11 @@ namespace abstergo_v3
 
             cerrar_opciones();
         }
+
+        private void iniciar_secion(object sender, RoutedEventArgs e)
+        {
+
+
+        }
     }
 }

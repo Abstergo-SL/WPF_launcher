@@ -59,7 +59,7 @@
                 <PasswordBox Grid.Row="5" FontStyle="Italic" FontSize="13" Width="200" Height="20" Background="#33000000" BorderBrush="Black"/>
 
                 <TextBlock Grid.Row="7" FontSize="15" TextAlignment="Center">
-                    <Hyperlink NavigateUri="http://172.16.51.3:5000/data" RequestNavigate="Hyperlink_RequestNavigate" Foreground="Red">
+                    <Hyperlink NavigateUri="http://172.16.51.3:5000/ip" RequestNavigate="Hyperlink_RequestNavigate" Foreground="Red">
                         ¿Olvidaste tu contraseña?
                     </Hyperlink>
                 </TextBlock>
@@ -78,7 +78,7 @@
                     </Hyperlink>
                 </TextBlock>
 
-                <Button Grid.Row="10" Content="iniciar scion" FontSize="20" Margin="36,10,37,10" BorderBrush="Black" Foreground="Black" Background="Red" >
+                <Button Grid.Row="10" Content="iniciar scion" FontSize="20" Margin="36,10,37,10" BorderBrush="Black" Foreground="Black" Background="Red" Click="iniciar_secion" >
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="15"/>

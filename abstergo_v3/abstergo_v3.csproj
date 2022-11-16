@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="git-merge.wmv" />
+    <Resource Include="ojitaaaa.png" />
     <Resource Include="googlelogo_light_color_272x92dp.png" />
     <Content Include="img\git-merge.wmv" />
   </ItemGroup>
