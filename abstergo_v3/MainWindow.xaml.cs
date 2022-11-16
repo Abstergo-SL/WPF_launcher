@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -54,6 +55,12 @@ namespace abstergo_v3
             caja_opciones.Visibility = Visibility.Visible;
             caja_secion.Visibility = Visibility.Hidden;
         }
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+        }
+
+
 
 
         private void opciones_Click(object sender, RoutedEventArgs e)

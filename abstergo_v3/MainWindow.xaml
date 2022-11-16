@@ -58,9 +58,25 @@
                 <TextBlock Grid.Row="4" Text="Contraseña"  FontStyle="Italic" FontSize="25" Foreground="Black" TextAlignment="Center"/>
                 <PasswordBox Grid.Row="5" FontStyle="Italic" FontSize="13" Width="200" Height="20" Background="#33000000" BorderBrush="Black"/>
 
-                <TextBlock Grid.Row="7" Text="¿Olvidaste tu contraseña?" FontSize="15" Foreground="Red" TextAlignment="Center"/>
-                <TextBlock Grid.Row="8" Text="¿Olvidaste tu usuario?" FontSize="15" Foreground="Red" TextAlignment="Center"/>
-                <TextBlock Grid.Row="9" Text="Registrate" FontSize="15" Foreground="Red" TextAlignment="Center"/>
+                <TextBlock Grid.Row="7" FontSize="15" TextAlignment="Center">
+                    <Hyperlink NavigateUri="http://172.16.51.3:5000/data" RequestNavigate="Hyperlink_RequestNavigate" Foreground="Red">
+                        ¿Olvidaste tu contraseña?
+                    </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Grid.Row="8" FontSize="15" TextAlignment="Center">
+                    <Hyperlink NavigateUri="https://www.google.com/" RequestNavigate="Hyperlink_RequestNavigate" Foreground="Red">
+                        d
+                         ¿Olvidaste tu usuario?"
+                    </Hyperlink>
+                </TextBlock>
+                
+                
+                <TextBlock Grid.Row="9" FontSize="15" TextAlignment="Center">
+                    <Hyperlink NavigateUri="https://youtube.com" RequestNavigate="Hyperlink_RequestNavigate" Foreground="Red">
+                         Registrate
+                    </Hyperlink>
+                </TextBlock>
 
                 <Button Grid.Row="10" Content="iniciar scion" FontSize="20" Margin="36,10,37,10" BorderBrush="Black" Foreground="Black" Background="Red" >
                     <Button.Resources>
