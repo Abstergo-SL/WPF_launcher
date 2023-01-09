@@ -23,7 +23,7 @@ namespace abstergo_v3
     {
         private int general_vol = 50;
         private int musica_vol = 50;
-        private int fps = 30;
+        private int fps = 60;
         private Boolean modocheto = false;
 
 
@@ -32,16 +32,19 @@ namespace abstergo_v3
         public MainWindow()
         {
             InitializeComponent();
+            opciones_sonido_general.Value = general_vol;
+            musicVolume.Value = musica_vol;
+            FPS_selector.SelectedItem = fps;
         }
 
         public void generar_formulario_opciones()
         {
             StreamWriter sr = File.CreateText("settings");
 
-            sr.WriteLine("Volume:" + general_vol + ","); //Inventate la estructura pero que
-            sr.WriteLine("cosa:" + musica_vol + ","); // facilmente los datos
-            sr.WriteLine("FPS:" + fps + ","); // sea estructurado para luego recoger
-            sr.WriteLine("FPS:" + modocheto + ","); // sea estructurado para luego recoger
+            sr.WriteLine("volume:" + general_vol + ","); //Inventate la estructura pero que
+            sr.WriteLine("music:" + musica_vol + ","); // facilmente los datos
+            sr.WriteLine("fps:" + fps + ","); // sea estructurado para luego recoger
+            sr.WriteLine("dev:" + modocheto + ","); // sea estructurado para luego recoger
 
             sr.Close();
         }
@@ -88,19 +91,32 @@ namespace abstergo_v3
             cerrar_opciones();
         }
 
-        private void Button_mode_desaroyo(object sender, RoutedEventArgs e)
-        {
-            modocheto = true;
-
-            generar_formulario_opciones();
-
-            cerrar_opciones();
-        }
 
         private void iniciar_secion(object sender, RoutedEventArgs e)
         {
 
 
         }
+
+        private void volume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            musica_vol = (int)e.NewValue;
+        }
+        private void opciones_sonido_general_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            general_vol = (int)e.NewValue;
+        }
+
+        private void dev_Checked(object sender, RoutedEventArgs e)
+        {
+            modocheto = true;
+        }
+
+        private void dev_Unchecked(object sender, RoutedEventArgs e)
+        {
+            modocheto = false;
+        }
+
+        
     }
 }

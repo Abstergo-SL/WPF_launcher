@@ -1,4 +1,4 @@
 Volume:50,
-cosa:50,
-FPS:30,
-FPS:False,
+cosa:5,
+FPS:60,
+FPS:True,
